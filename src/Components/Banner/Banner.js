@@ -15,8 +15,8 @@ export default function Banner() {
         </div>
         <div className="search_container">
             <div className="button_box">
-                <button>Search by City</button>
-                <button>Any Room</button>
+                <button id="option_button">Search by City</button>
+                <button id="option_button">Any Room</button>
                 <button>Find Homes</button>
             </div>
         </div>
