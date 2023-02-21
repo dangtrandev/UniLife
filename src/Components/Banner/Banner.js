@@ -38,7 +38,7 @@ export default function Banner() {
                     </ul>
                 </div>
                 {/*Finds Home Button*/}
-                    <button>Find Homes</button>
+                    <button class="btn find-button">Find Homes</button>
             </div>
         </div>
     </div>

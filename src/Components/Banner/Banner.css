@@ -1,0 +1,73 @@
+.banner_container{
+    background-image: url('cover-img.png');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    width: 100%; 
+    height: 480px; 
+}
+.banner_overlay{
+    display: flex; 
+    background: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(2px);
+    width: 100%; 
+    height: 100%;
+    color: white; 
+    font-family: 'Epilogue';
+    justify-content: center; 
+    align-items: center;
+}
+
+.banner_info{
+    width: 50%; 
+    text-align: center; 
+    height: 132px; 
+    padding: 0 120px 0 120px;
+}
+
+.search_container{
+    height: 64px; 
+    display: flex; 
+    justify-content: center;  
+}
+
+.button_box{
+    position: relative; 
+    background-color: white;
+    bottom: 64px;
+    height: 128px;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+    border-radius: 24px;
+    padding-right: 40px;
+    padding-left: 40px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+    
+}
+
+.dropdown-center{
+    margin-top: 40px; 
+    margin-bottom: 40px; 
+    margin-right: 24px;
+}
+
+.option-button{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    width: 320px; 
+    height: 48px; 
+    border-radius: 12px;
+    color: #CED3D8; 
+    font-size: 20px; 
+    border: 1px solid #CED3D8; 
+}
+
+.find-button{
+    background-color: #3A5295; 
+    color: #FFFFFF;
+    font-weight: 600; 
+    width: 200px; 
+    height: 48px;
+}
