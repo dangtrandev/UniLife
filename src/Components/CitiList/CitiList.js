@@ -26,6 +26,7 @@ export default function CitiList() {
   return (
     <div className="list_container">
         <h2>Student Accomodations in our top cities</h2>
+        {/*using the map function to list the citi with cityCard layout*/}
         <div className="city_list">
             {/* <img src={city[0].image_url}/> */}
             {city?.slice(0, -1).map((citi)=>{   
@@ -34,11 +35,13 @@ export default function CitiList() {
                 key         = {citi._id}
                 name        = {citi.name}
                 image_url   = {citi.image_url}
+                property_count = {citi.property_count}
                 />
                 )
             })}
-
         </div>
+        
+        <button className="all-cities-btn"><a>See All Cities</a></button>
     </div>
   )
 }

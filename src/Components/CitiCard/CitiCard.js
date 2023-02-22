@@ -1,5 +1,5 @@
-import React from 'react'
-
+import React from 'react'; 
+import "./CitiCard.css";
 export default function CitiCard(city) {
     const imageStyle = {
         backgroundImage:    `url(${city.image_url})`,
@@ -22,9 +22,9 @@ export default function CitiCard(city) {
   return (
     <div style={imageStyle}>
         <div className="card-overlay">
-            <p>{city?.name}</p>
+            <h3>{city?.name}</h3>
+            <p>{city?.property_count} properties</p>
         </div>
-        
     </div>
   )
 }
