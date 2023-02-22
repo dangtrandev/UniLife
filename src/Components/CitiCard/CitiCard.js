@@ -7,11 +7,23 @@ export default function CitiCard(city) {
         backgroundPosition: "center", 
         width:              "400px",
         height:             "300px", 
-        boxRadius:          "24px", 
-    }
+        borderRadius:       "24px", 
+        marginRight:        "40px",
+        marginBottom:       "40px",
+    };
+    const cardStyle = {
+        display:        "flex", 
+        justifyContent: "center", 
+        align:     "center", 
+        color:          "white", 
+
+    }; 
   return (
     <div style={imageStyle}>
-        <p>{city.name}</p>
+        <div className="card-overlay" style={cardStyle}>
+            <p>{city?.name}</p>
+        </div>
+        
     </div>
   )
 }
