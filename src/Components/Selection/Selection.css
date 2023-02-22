@@ -1,0 +1,12 @@
+.selection_box{
+    margin-left: 18%;
+    margin-right:18%;
+}
+
+.selection_items button{
+    background-color: #3A5295; 
+    color: #FFFFFF;
+    font-weight: 600; 
+    width: 200px; 
+    height: 48px;
+}

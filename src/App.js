@@ -4,7 +4,7 @@ import NavBar from './Components/NavBar/NavBar';
 import Banner from './Components/Banner/Banner';
 import CitiList from './Components/CitiList/CitiList'; 
 import Exclusive from './Components/Exclusive/Exclusive';
-
+import Selection from './Components/Selection/Selection';
 
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
       <Banner />
       <CitiList />
       <Exclusive />
+      <Selection />
     </div>
      
   )
