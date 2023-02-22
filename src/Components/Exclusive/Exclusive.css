@@ -8,15 +8,17 @@
 .exclusive_box{
     background-color: #F6FAFD; 
     border-radius: 24px; 
-    width: 80%; 
     display: flex;
     flex-wrap: wrap; 
     flex-direction: column; 
     align-items: center;
     padding-top: 80px;
-    padding-bottom: 80px; 
+    padding-right: 20px; 
+    padding-left: 60px;
 }
-
+.exclusive_box h3{
+    font-size: 36px;
+}
 .feature-container{
     display: flex; 
     flex-wrap: wrap; 
@@ -27,6 +29,17 @@
 .feature_item{
    display:flex; 
    flex-direction: column;
-   
+   width: 360px;
+   margin-right: 40px;
+   align-items: center; 
+   text-align: center;
+}
+.feature_item h4{
+    font-size: 28px;
+    font-weight: 500;
+}
+.feature_item p{
+    font-size: 20px;
+    font-weight: 400;
 
 }

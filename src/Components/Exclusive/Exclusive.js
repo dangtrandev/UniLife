@@ -8,7 +8,7 @@ export default function exclusive () {
             <h3>Compare all inclusive student homes</h3>
             <div className="feature-container">
                 <div className="feature_item">
-                    <img src="" alt="search_logo" />
+                    <i class="bi bi-search-heart"></i>
                     <h4>Search</h4>
                     <p>Find your dream home in the perfect area near your university.</p>
                 </div>
