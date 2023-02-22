@@ -10,6 +10,10 @@ function Contacts() {
                 Sign up for our weekly newsletter and stay informed.</p>
             <input type="email" placeholder="type your email"/>
         </div>
+
+        <div className="social_container">
+            
+        </div>
     </div>
   )
 }
