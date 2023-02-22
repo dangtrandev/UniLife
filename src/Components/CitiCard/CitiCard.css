@@ -1,4 +1,19 @@
 .card-overlay{
     font-size: 40px; 
-    
+    color: #FFFFFF; 
+    font-weight: 400; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    backdrop-filter: blur(2px);
+    border-radius: 24px;
+}
+.card-overlay h3{
+    font-size: 40px
+}
+.card-overlay p{
+    font-size: 20px;
 }

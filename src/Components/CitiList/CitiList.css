@@ -12,3 +12,15 @@ h2{
     margin-bottom: 48px; 
     margin-top: 80px;
 }
+
+.all-cities-btn{
+    background-color: #3A5295; 
+    font-size: 20px; 
+    color: #FFFFFF;
+    font-weight: 600; 
+    width: 200px; 
+    height: 48px;
+    border-radius: 12px; 
+    border: none; 
+    margin: 22px; 
+}

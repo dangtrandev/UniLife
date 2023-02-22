@@ -1,7 +1,15 @@
-import React from 'react'
+import React from 'react'; 
+import "./Exclusive.css"; 
 
-export default function Exclusive() {
+export default function exclusive () {
   return (
-    <div>Exclusive</div>
+    <div className="exclusive_container">
+        <div className="exclusive_box">
+            <h3>Compare all inclusive student homes</h3>
+            <div>
+
+            </div>
+        </div>
+    </div>
   )
 }
