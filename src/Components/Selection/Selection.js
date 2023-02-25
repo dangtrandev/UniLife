@@ -31,7 +31,7 @@ export default function () {
 
             </div>
 
-            <img src={person} alt="person_img"/>
+            <img src={person} alt="person_img" id="person"/>
         </div>   
     </div>
   )
