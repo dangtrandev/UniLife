@@ -14,7 +14,7 @@ export default function CitiList() {
         )
         .then((result) => {
             setCities(result.data.response)
-            // console.log(result); //checking data information after fetching 
+            console.log(result); //checking data information after fetching 
         })
         .catch((err) => {
             console.log("error", err); 

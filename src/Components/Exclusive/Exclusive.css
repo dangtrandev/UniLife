@@ -11,7 +11,6 @@
     display: flex;
     flex-wrap: wrap; 
     flex-direction: column; 
-    align-items: center;
     padding-top: 80px;
     padding-right: 20px; 
     padding-left: 60px;
@@ -23,6 +22,7 @@
     display: flex; 
     flex-wrap: wrap; 
     justify-content:flex-start;
+    align-items: baseline;
     margin-bottom: 80px;
     margin-top: 40px
 }

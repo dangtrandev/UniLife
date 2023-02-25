@@ -1,4 +1,6 @@
 .selection_box{
+    display: flex; 
+    justify-content: space-around;
     margin-left: 18%;
     margin-right:18%;
 }
@@ -26,4 +28,11 @@
 }
 .selection_info h4{
     font-size: 28px;
+    position: relative; 
+    right: 55px
+}
+.selection_items img{
+    position: relative; 
+    right: 70px;
+    top: 10px
 }
