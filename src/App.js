@@ -10,7 +10,7 @@ import Selection from './Components/Selection/Selection';
 import Contacts from './Components/Contacts/Contacts';
 import Footer from './Components/Footer/Footer'; 
 
-import Homepage from './Pages/Homepage';
+import HomePage from './Pages/HomePage';
 import HomeDetailsPage from './Pages/HomeDetailsPage'; 
 import CitiDetailsPage from './Pages/CitiDetailsPage';
 import SeeAllCitiPage from './Pages/SeeAllCitiPage'; 
@@ -19,10 +19,11 @@ import { dom } from '@fortawesome/fontawesome-svg-core';
 
 function App() {
   return (
-    <div>
-      
-
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />}/>
+      </Routes>
+    </BrowserRouter>
      
   )
 }

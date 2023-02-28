@@ -36,3 +36,9 @@
     right: 70px;
     top: 10px
 }
+
+@media screen and (max-width: 768px) {
+    #person{
+        display: none;
+    }
+}

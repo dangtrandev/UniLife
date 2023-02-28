@@ -1,7 +1,10 @@
 .contacts_container{
+    display: flex; 
+    justify-content: space-around;
     background-color: #00A2E1; 
     color: #FFFFFF; 
-    padding: 80px 0px 80px 18%; 
+    padding-top: 80px; 
+    padding-bottom: 80px;
 
 }
 
@@ -20,4 +23,19 @@
     padding-left:20px;
     padding-top: 13px; 
     padding-bottom: 13px;
+}
+
+.social_container{
+    display: flex; 
+    flex-direction: column;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+
+.social_icons{
+    display: flex; 
+    align-items: baseline;
+}
+.social_icons p{
+    margin-left: 18px;
 }

@@ -21,10 +21,11 @@
 .feature-container{
     display: flex; 
     flex-wrap: wrap; 
-    justify-content:flex-start;
+    justify-content:center;
     align-items: baseline;
     margin-bottom: 80px;
-    margin-top: 40px
+    margin-top: 40px; 
+
 }
 .feature_item{
    display:flex; 
