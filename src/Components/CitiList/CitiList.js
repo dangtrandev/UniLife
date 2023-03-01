@@ -1,5 +1,5 @@
 import React from 'react'; 
-import {useState, useEffect } from "react"; 
+import { useState, useEffect } from "react"; 
 import axios from "axios";  
 import CitiCard from '../CitiCard/CitiCard';
 import "./CitiList.css";

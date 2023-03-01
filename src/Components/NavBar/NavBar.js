@@ -3,11 +3,13 @@ import "./NavBar.css";
 import Vector from "../../assets/Vector.png"; 
 import Unilife from "../../assets/UniLife.svg";
 
+import HomePage from '../../Pages/HomePage';
+
 function NavBar() {
   return (
     <div className="nav_container"> 
             <div className="logo_container">
-                <a href="index.html" alt="home_page">
+                <a href="/" alt="home_page">
                     <img src={Vector} id="logo_brand" alt="logo_brand" width ="40.85px" height="29.6px" />
                     <img src={Unilife} id="logo_name" alt="logo_name" width="102px" height="22px"/>
                 </a>
