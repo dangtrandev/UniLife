@@ -12,15 +12,15 @@ import Footer from '../Components/Footer/Footer';
 
 
 export default function HomePage() {
+    
   return (
     <div>
-        <NavBar />
-        <Banner />
+        <Banner 
+        title="Find the student home with bill included"
+        statement="A simple and faster way to search for student accomodation"/>
         <CitiList />
         <Exclusive />
         <Selection />
-        <Contacts />
-        <Footer />
     </div>
   )
 }
