@@ -20,9 +20,15 @@ import { dom } from '@fortawesome/fontawesome-svg-core';
 function App() {
   return (
     <BrowserRouter>
+      <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />}/>
+        <Route path="/SeeAllCitiPage" element={<SeeAllCitiPage />} />
+        <Route path="/HomeDetailsPage" element={<HomeDetailsPage />} />
+        <Route path="/CitiDetailsPage" element={<CitiDetailsPage />} />
       </Routes>
+      <Contacts />
+      <Footer />
     </BrowserRouter>
      
   )
