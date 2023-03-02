@@ -5,11 +5,13 @@
     display: flex; 
     justify-content: center; 
 }
+
 .exclusive_box{
     background-color: #F6FAFD; 
     border-radius: 24px; 
     display: flex;
     flex-wrap: wrap; 
+    align-items: center;
     flex-direction: column; 
     padding-top: 80px;
     padding-right: 20px; 
@@ -25,8 +27,8 @@
     align-items: baseline;
     margin-bottom: 80px;
     margin-top: 40px; 
-
 }
+
 .feature_item{
    display:flex; 
    flex-direction: column;

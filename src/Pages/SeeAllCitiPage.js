@@ -6,6 +6,23 @@ import SmallCitiCard from '../Components/SmallCitiCard/SmallCitiCard';
 
 
 function SeeAllCitiPage() {
+    const allCitiesContainer = {
+        display: "flex",
+        flexWrap: "wrap",
+        flexDirection: "column", 
+        padding: "80px 80px 120px 80px", 
+        alignItems: "center",
+    }
+    const headerStyle ={
+        marginBottom: "120px",
+    }
+
+    const smallCard_container ={
+        display: "flex", 
+        flexWrap: "wrap", 
+        justifyContent: "space-around", 
+
+    }
     const baseURL = "https://unilife-server.herokuapp.com/cities?limit=20"; 
     const [city, setCities] = useState([]); 
 
@@ -29,16 +46,18 @@ function SeeAllCitiPage() {
         <Banner 
         title="Student Accomodation"
         statement="UniLife have student accommodation available across the UK. Whatever you're after, we can help you find the right student accommodation for you. "/>
-        <div className="small_city_list">
-            {city?.map((citi) =>{
-                return(
-                    <SmallCitiCard
-                    key     = {citi._id}
-                    name    = {citi.name}
-                    />
-                )
-            })}
-
+        <div className="small_city_list" style={allCitiesContainer}>
+            <h4 style={headerStyle}>Search By City</h4>
+            <div className="smallCard_container" style={smallCard_container}>
+                {city?.map((citi) =>{
+                    return(
+                        <SmallCitiCard
+                        key     = {citi._id}
+                        name    = {citi.name}
+                        />
+                    )
+                })}
+            </div>
         </div>
     </div>
   )
