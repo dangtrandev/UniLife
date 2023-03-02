@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Banner from '../Components/Banner/Banner';
 import "../App.css";
 import axios from "axios"; 
-import SmallCitiCard from '../Components/SmallCitiCard/SmallCitiCard';
+import SmallCityBTN from '../Components/SmallCitiCard/SmallCityBTN';
 
 
 function SeeAllCitiPage() {
@@ -39,7 +39,7 @@ function SeeAllCitiPage() {
             console.log("error", err); 
         })
     }, [])
-    console.log(city); 
+    console.log(city);
 
   return (
     <div>
@@ -49,14 +49,14 @@ function SeeAllCitiPage() {
         <div className="small_city_list" style={allCitiesContainer}>
             <h4 style={headerStyle}>Search By City</h4>
             <div className="smallCard_container" style={smallCard_container}>
-                {city?.map((citi) =>{
-                    return(
-                        <SmallCitiCard
-                        key     = {citi._id}
-                        name    = {citi.name}
-                        />
+                {city.map((city) =>(
+                            <SmallCityBTN
+                            key     = {city._id}
+                            cityId  = {city._id}
+                            name    = {city.name}
+                            />
                     )
-                })}
+                )}
             </div>
         </div>
     </div>
