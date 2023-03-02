@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import axios from "axios";  
 import CitiCard from '../CitiCard/CitiCard';
 import "./CitiList.css";
-import SeeAllCitiPage from '../../Pages/SeeAllCitiPage';
 export default function CitiList() {
     const baseUrl = "https://unilife-server.herokuapp.com/cities"; 
     const [city, setCities] = useState([]); //set to the initial empty array
