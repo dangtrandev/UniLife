@@ -1,7 +1,9 @@
 .citi_btn{
     background-color: #FFFFFF; 
+    color: black; 
 }
 
 .citi_btn:hover{
     background-color: #3A5295;
+    color: #FFFFFF;
 }

@@ -24,8 +24,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />}/>
         <Route path="/SeeAllCitiPage" element={<SeeAllCitiPage />} />
-        <Route path="/HomeDetailsPage/:cityId" element={<HomeDetailsPage />} />
-        <Route path="/CitiDetailsPage" element={<CitiDetailsPage />} />
+        <Route path="/HomeDetailsPage" element={<HomeDetailsPage />} />
+        <Route path="/CitiDetailsPage/:cityId" element={<CitiDetailsPage />} />
       </Routes>
       <Contacts />
       <Footer />

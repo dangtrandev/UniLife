@@ -1,5 +1,5 @@
 import React from 'react'; 
-import "./SmallCityBTN.css"; 
+import "./SmallCityBTN.css";
 import { Link } from "react-router-dom"; 
 
 
@@ -36,18 +36,17 @@ export default function SmallCitiCard({
         fontSize: "28px", 
         fontWeight: "600",
         marginRight: "24px",
-        backgroundColor: "#FFFFFF"
 
     }; 
-    const hyperRef = `/HomeDetailsPage/${cityId}`; 
+    const hyperRef = `/CitiDetailsPage/${cityId}`; 
 
 
   return (
-    // <a href={hyperRef}>
-    <div className="small-city-card-container" >
-            <button className="citi_btn" id={cityId} style={smallciticard}>{name}</button>
+    <a href={hyperRef}>
+      <div className="small-city-card-container" >
+              <button className="citi_btn" id={cityId} style={smallciticard}>{name}</button>
 
-    </div>
-    // </a>
+      </div>
+    </a>
   )
 }
