@@ -13,7 +13,7 @@ export default function HomeCard(
   return (
     <div className="homeCard_container">
       <div className="home_image">
-    
+      <h3>{propertyCity}</h3>
       </div>
     </div>
   )
