@@ -38,7 +38,7 @@ export default function HomeList({
             key={home._id}
             homeImage={home?.images[0]}
             bedroomPrice={home?.bedroom_prices.bedroom_one}
-            numberBedroom={home?.bedroom_count}
+            bedroomCount={home?.bedroom_count}
             />
         ))}
         </div>
