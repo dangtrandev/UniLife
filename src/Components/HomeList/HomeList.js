@@ -25,7 +25,7 @@ export default function HomeList({
         .catch(
             (err) => console.log(err)
             ) 
-    }, [city])
+    }, [])
     console.log(property);
   return (
     <div className="home_list_container">
