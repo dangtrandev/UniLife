@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react'; 
 import axios from 'axios';
 import HomeCard from '../HomeCard/HomeCard';
+import "./HomeList.css";
 
 
 export default function HomeList({
@@ -16,7 +17,7 @@ export default function HomeList({
     useEffect(()=>{
         axios
         .get(
-            `${baseURL}${cityId}`
+            propertiesURL
         )
         .then((result) =>{
             setProperties(result.data.response); 
@@ -25,24 +26,19 @@ export default function HomeList({
         .catch(
             (err) => console.log(err)
             ) 
-    }, [city])
+    }, [cityId])
     // console.log(property[0]?.images[0]);
   return (
     <div className="home_list_container">
         <h4>{propertyCount} homes in leeds</h4>
-        {/* <img src={property[0]?.images[0]}/> */}
+        {/* <img src={property?.images[0]}/> */}
         <div className="home_container">
         {property?.map((home)=>(
             <HomeCard
             key={home._id}
-            propertyCount = {home?.property_count}
-            bedroomCount = {home?.bedroom_count}
-            bathroomCount = {home?.bathroom_count}
-            propertyType = {home?.property_type}
-            propertyImage = {home?.images[0]}
-            propertyStreet = {home?.address.street}
-            propertyPostcode = {home?.address.postcode}
-            propertyCity = {home?.address.city}
+            homeImage={home?.images[0]}
+            bedroomPrice={home?.bedroom_prices.bedroom_one}
+            numberBedroom={home?.bedroom_count}
             />
         ))}
         </div>
