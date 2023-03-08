@@ -35,10 +35,16 @@ export default function HomeList({
         <div className="home_container">
         {property?.map((home)=>(
             <HomeCard
-            key={home._id}
-            homeImage={home?.images[0]}
-            bedroomPrice={home?.bedroom_prices.bedroom_one}
-            bedroomCount={home?.bedroom_count}
+            key             ={home._id}
+            homeImage       ={home?.images[0]}
+            bedroomPrice    ={home?.bedroom_prices.bedroom_one}
+            bedroomCount    ={home?.bedroom_count}
+            bathroomCount   ={home?.bathroom_count}
+            homeType        ={home?.property_type}
+            homeFurnish     ={home?.furnished}
+            homeStreet      ={home?.address.street}
+            homeCity        ={home?.address.city}
+            homePostcode    ={home?.address.postcode}
             />
         ))}
         </div>
