@@ -1,7 +1,20 @@
 import React from 'react'
 
-export default function HomeCard() {
+export default function HomeCard(
+  propertyCount, 
+  bedroomCount, 
+  bathroomCount, 
+  propertyType, 
+  propertyImage, 
+  propertyStreet, 
+  propertyPostcode, 
+  propertyCity
+) {
   return (
-    <div>HomeCard</div>
+    <div className="homeCard_container">
+      <div className="home_image">
+        <img src={propertyImage}/>
+      </div>
+    </div>
   )
 }

@@ -37,8 +37,9 @@ export default function CitiDetailsPage() {
       statement="Whatever you're after, we can help you find the right student accomodation for you"
       />
       <div className="home_search_bar">
-        {/* dropdown button for MinBedroom */}
+        {/* MinBedRoom Selection */}
         <div className="select_option">
+            <h5>Min Bedroom</h5>
             <select id="room_type">
               <option value="">All Room Types</option>
               <option value="1">Single Room</option>
@@ -46,14 +47,34 @@ export default function CitiDetailsPage() {
               <option value="3">Suite Room</option>
             </select>
         </div>
-        {/* dropdown button for MinBathroom */}
+        {/* MinBathroom selection */}
         <div className="select_option">
-            <select id="bathroom_size">
+            <h5>Min Bathroom</h5>
+            <select id="bathroom_size" >
               <option value="">All bathroom size</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
             </select>
+        </div>
+        {/* maxprice selection */}
+        <div className="select_option">
+            <h5>Max Price Bathroom</h5>
+            <select id="bathroom_size">
+              <option value="">All Price</option>
+              <option value="200">200</option>
+              <option value="400">400</option>
+              <option value="600">600</option>
+            </select>
+        </div>
+        {/* HomeType selection */}
+        <div className="selection_option">
+          <h5>Home Type</h5>
+          <select id="home_type">
+            <option value="apartment">Apartment</option>
+            <option value="detached">Detached</option>
+            <option value="semi">Semi Detached</option>
+          </select>
         </div>
       </div>
       <HomeList 
