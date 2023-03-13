@@ -30,12 +30,13 @@ export default function HomeList({
     // console.log(property[0]?.images[0]);
   return (
     <div className="home_list_container">
-        <h4>{propertyCount} homes in leeds</h4>
+        <h4 id="num_home_leed">{propertyCount} homes in leeds</h4>
         {/* <img src={property?.images[0]}/> */}
         <div className="home_container">
         {property?.map((home)=>(
             <HomeCard
             key             ={home._id}
+            homeId          ={home._id}
             homeImage       ={home?.images[0]}
             bedroomPrice    ={home?.bedroom_prices.bedroom_one}
             bedroomCount    ={home?.bedroom_count}

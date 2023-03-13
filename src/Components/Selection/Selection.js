@@ -2,7 +2,7 @@ import React from 'react';
 import "./Selection.css";
 import person from "../../assets/person.png"; 
 import selection from "../../assets/Vectorselection.svg"; 
-import favorite from "../../assets/Vectorfavorite.svg"; 
+import favorite from "../../assets/favorite.svg"; 
 
 
 

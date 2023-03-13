@@ -4,9 +4,11 @@ import bedIcon from "../../assets/bed-icon.svg";
 import bathIcon from "../../assets/bath-icon.svg"; 
 import locationIcon from "../../assets/location-icon.svg"; 
 import homeIcon from "../../assets/home-icon.svg";
+import {Link} from 'react-router-dom';
 
 export default function HomeCard(
- {  homeImage, 
+ {  homeId,
+    homeImage, 
     bedroomPrice,
     bedroomCount,
     bathroomCount,
@@ -18,6 +20,7 @@ export default function HomeCard(
  }
 ) {
   console.log(homeStreet);
+  const hyperREF = `/HomeDetailsPage/${homeId}`;
   return (
     <div className="homeCard_container">
         <img className ="property_image" src={homeImage}/>
@@ -47,10 +50,14 @@ export default function HomeCard(
             <p>{homeStreet}, {homeCity}, {homePostcode}</p>
           </div>
         </div>
-        <button id="viewHome_btn">
+      
+        <button className="viewHome_btn" id={homeId}>
           <img src={homeIcon}/>
+          <a href={hyperREF}>
           <p>View Home</p>
+          </a>
         </button>
+  
     </div>
   )
 }

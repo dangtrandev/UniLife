@@ -1,10 +1,11 @@
 import React from 'react';
-import { useEffect, useState, useContext } from 'react'; 
+import { useEffect, useState } from 'react'; 
 import { useParams } from "react-router-dom";
 import axios from 'axios'; 
 import Banner from '../Components/Banner/Banner';
 import HomeList from '../Components/HomeList/HomeList';
 import "./CitiDetailsPage.css"; 
+import studentImg from "../assets/student.svg"; 
 
 export default function CitiDetailsPage() {
   const baseURL = "https://unilife-server.herokuapp.com/cities/"
@@ -19,12 +20,12 @@ export default function CitiDetailsPage() {
       )
     .then((result) => {
       setCities(result.data.data[0]); 
-      // console.log(result); //checking the result data 
+      console.log(result); //checking the result data 
     })
     .catch(
       (err) => console.log(err)
       )
-  },[cityId])
+  },[])
   // console.log(city);// checking the data city contains in city 
   // console.log(city?.property_count); 
   // console.log(city?.name);
@@ -80,9 +81,23 @@ export default function CitiDetailsPage() {
       <HomeList 
         city = {city}
         propertyCount = {city?.property_count}
-        cityName = {city?.name}
         cityId = {city?._id}
       />
+      <div className="leed_container">
+        <div className="leed_statement_container">
+          <h3>Being a student in Leeds</h3>
+          <p>Leeds is a lively and multicultural city with a large student population. 
+            It is quite a compact city, so it is easy to get around and has a community 
+            feel. Leeds is the perfect mix of city and town life and has something to 
+            offer to anyone who calls it home.</p>
+
+          <p>Leeds is home to three universities, the University of Leeds, Leeds Trinity 
+            University and Leeds Beckett University</p>
+        </div>
+        <div className="leed_image_container">
+          <img src={studentImg} />
+        </div>
+      </div>
     </div>
   )
 }

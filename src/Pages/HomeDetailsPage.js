@@ -4,6 +4,9 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import leftArrow from '../assets/left_arrow.svg'; 
 import './HomeDetailsPage.css'; 
+import bathIcon from '../assets/bath-icon.svg';
+import bedIcon from '../assets/bed-icon.svg';
+
 
 
 
@@ -47,9 +50,36 @@ export default function HomeDetailsPage() {
         <div className="home_details_info">
           <div className="home_info">
                 <div className="home_address">
-                  <p>{home?.address.street}, {home?.address.city}, {home?.address.postcode}</p>
+                  <p>{home?.address.street}, {home?.address.city}, Leeds {home?.address.postcode}</p>
                 </div>
           </div>
+                
+          <div className= "detail_info_container">
+            {/*  showing info for bathroom */}
+            <div className="info_container">
+              <p>Bedrooms</p>
+              <div className="home_icon">
+                <img src={bathIcon} />
+                <p>{home?.bathroom_count}</p>
+              </div>
+            </div>
+            {/* showing info for bedroom */}
+            <div className="info_container">
+              <p>Bathroom</p>
+              <div className="home_icon">
+                <img src={bedIcon} />
+                <p>{home?.bedroom_count}</p>
+              </div>
+            </div>
+            {/* showing info for propertytype */}
+            <div className="info_container">
+              <p>Property Type</p>
+              <p>{home?.property_type}</p>
+            </div>
+
+
+          </div>
+
         </div>
 
       </div>
