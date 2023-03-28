@@ -7,6 +7,8 @@ import './HomeDetailsPage.css';
 import bathIcon from '../assets/bath-icon.svg';
 import bedIcon from '../assets/bed-icon.svg';
 import BedroomPrice from '../Components/BedroomPrice/BedroomPrice'; 
+import checkMark from '../assets/check_mark.svg';
+
 
 
 
@@ -28,8 +30,8 @@ export default function HomeDetailsPage() {
     .catch((err)=>console.log(err))
   },[])
  
-  // console.log(home?.bedroom_prices); //checking the object
-  // const price = Object.values(home?.bedroom_prices);//turn the value of object into array 
+  console.log(home?.bedroom_prices); //checking the object
+
   // console.log(price);//chekcing the value of the array 
 
   // const priceList = document.getElementById(priceList); 
@@ -116,13 +118,68 @@ export default function HomeDetailsPage() {
       <div className="price_box">
         <h3>Bedroom's price</h3>
         <div className="price_list" id="priceList">
-         {/* <p>Bedroom 1:            ${home?.bedroom_prices.bedroom_one}/week</p>
-         <p>Bedroom 2:            ${home?.bedroom_prices.bedroom_two}/week</p>
-         <p>Bedroom 3:            ${home?.bedroom_prices.bedroom_three}/week</p>
-         <p>Bedroom 4:            ${home?.bedroom_prices.bedroom_four}/week</p>
-         <p>Bedroom 5:            ${home?.bedroom_prices.bedroom_five}/week</p> */}
+          <div className="room">
+          <p>Bedroom 1:</p>           
+          <p>${home?.bedroom_prices.bedroom_one}/week</p>
+          </div>
+          <div className="line"></div>
+          <div className="room">
+          <p>Bedroom 2:</p>           
+          <p>${home?.bedroom_prices.bedroom_two}/week</p>
+          </div>
+          <div className="line"></div>  
+          <div className="room">
+          <p>Bedroom 3:</p>           
+          <p>${home?.bedroom_prices.bedroom_three}/week</p>
+          </div>
+          <div className="line"></div>
+          <div className="room">
+          <p>Bedroom 4:</p>           
+          <p>${home?.bedroom_prices.bedroom_four}/week</p>
+          </div>
+          <div className="line"></div>
+          <div className="room">
+          <p>Bedroom 5:</p>           
+          <p>${home?.bedroom_prices.bedroom_five}/week</p>
+          </div>
         </div>
       </div>
+    </div>
+
+    {/* key features sections */}
+    <div className="key_feature_container">
+      <h3>Key Features</h3>
+      <div className="key_feature_list">
+
+        <div className="key_items">
+          <img src={checkMark}/>
+          <p>Great Size Period Property</p>
+        </div>
+
+        <div className="key_items">
+          <img src={checkMark}/>
+          <p>Four/ five bedrooms</p>
+        </div>
+
+
+        <div className="key_items">
+          <img src={checkMark}/>
+          <p>Two Reception Room</p>
+        </div>
+
+
+        <div className="key_items">
+          <img src={checkMark}/>
+          <p>OpenLand Dinning Kitchen</p>
+        </div>
+
+        <div className="key_items">
+          <img src={checkMark}/>
+          <p>Two Bath/Shower Rooms & Two WC's</p>
+        </div>
+
+      </div>
+
     </div>
   </div>
     
